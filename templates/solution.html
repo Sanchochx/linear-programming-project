@@ -1,0 +1,24 @@
+{% include "header.html" %}
+<div class="main-content">
+<div class="code-form">
+<div class="form-container">
+    <br>
+    <h2>Solución del ejercicio</h2>
+    <br>
+    <p>Z, El valor óptimo de la función objetivo es: <strong>{{ solution.optimal_value }}</strong> </p>
+    <p>Valores de las variables de decisión:</p>
+    <strong>
+        {% for var in solution.vars %}
+            {% for key, value in var.items() %}
+                {{ key }}: {{ value }}
+    <br>
+    <br>
+            {% endfor %}
+        {% endfor %}
+</strong>
+    <a href="{{ url_for('index') }}"><button type="submit" class="button">Regresar</button></a>
+</div>
+</div>
+</div>
+{% include "footer.html" %}
+

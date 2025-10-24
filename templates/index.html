@@ -1,0 +1,29 @@
+{% include "header.html" %}
+<div class="main-content">
+<div class="code-form">
+<div class="form-container">
+    <br>
+<h2>Ingrese el número de restricciones y variables:</h2>
+    <form action="/index" method="post">
+        <label for="num_variables">Número de Variables:</label>
+        <input type="number" name="num_variables" id="num_variables" required>
+        <br>
+        <br>
+        <label for="num_constraints">Número de Restricciones:</label>
+        <input type="number" name="num_constraints" id="num_constraints" required>
+        <br>
+        <br>
+        <label for="optimization_type">Tipo de Optimización:</label>
+        <select name="optimization_type" id="optimization_type">
+            <option></option>
+            <option value="Maximizar">Maximizar</option>
+            <option value="Minimizar">Minimizar</option>
+        </select>
+        <br>
+        <br>
+        <button type="submit" class="button">Continuar</button>
+    </form>
+    </div>
+    </div>
+    </div>
+{% include "footer.html" %}
