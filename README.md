@@ -203,10 +203,6 @@ elif relation_operators[i] == '=':
     problem += pulp.lpSum([...]) == constraint_constants[i]
 ```
 
-## Screenshots
-
-(Add screenshots of your application here if available)
-
 ## Contributing
 
 Contributions are welcome! Please check the [CONTRIBUTING.md](CONTRIBUTING.md) file for guidelines on how to contribute to this project.
